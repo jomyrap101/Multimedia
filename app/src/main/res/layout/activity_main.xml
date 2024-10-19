@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/mono"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/audioReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boton audio"
+        android:layout_below="@+id/imagen"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/videoVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="probar"
+        android:layout_below="@+id/audioReproducir"
+        android:layout_centerHorizontal="true"
+        />
+    <VideoView
+        android:id="@+id/myVideoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoVer"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/animateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto 2"
+        android:layout_below="@+id/myVideoView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imagenia"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>
